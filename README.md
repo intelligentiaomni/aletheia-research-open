@@ -108,17 +108,19 @@ Example:
 ```
 aletheia-research-open/
 │
-├── baseline                   # nanoGPT clone for research experiments; do NOT modify directly
-│   └── ...                    # cloned nanoGPT files
-├── docs/                      # notes, insights, write-ups
-├── leaderboard/               # best configurations and scores
+├── baseline/                   # nanoGPT clone for research experiments; do NOT modify directly
+│   ├── venv/                      
+│   └── ...                     # cloned nanoGPT files
+├── docs/                       # notes, insights, write-ups
+├── leaderboard/                # best configurations and scores
 ├── parameter-golf/
-│   ├── configs/               # parameter configs (learning rate, batch size, etc.)
-│   ├── experiments/           # scripts to run experiments
-│   ├── logs/                  # experiment logs (CSV / JSON)
+│   ├── configs/                # parameter configs (learning rate, batch size, etc.)
+│   ├── experiments/            # scripts to run experiments
+│   │   └── run_baseline_cpu.py
+│   ├── logs/                   # experiment logs (CSV / JSON)
 │   │   └── experiment_log.csv
-│   ├── results/               # outputs from runs
-│   └── eval/                  # evaluation functions
+│   ├── results/                # outputs from runs
+│   └── eval/                   # evaluation functions
 ├── LICENSE
 ├── .gitignore
 ├── README.md
@@ -130,8 +132,8 @@ aletheia-research-open/
 
 ### Phase 1 — Baseline and Logging
 
-[] Run baseline model<br>
 [] Set up experiment log<br>
+[] Run baseline model<br>
 [] Run 10–20 experiments<br>
 [] Identify initial parameter patterns
 
