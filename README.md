@@ -112,7 +112,7 @@ We gratefully acknowledge the open-source and research contributions that enable
 
 - [nanoGPT GitHub](https://github.com/karpathy/nanoGPT) — baseline code and architecture.
 - [Attention is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762) — foundational transformer paper informing model design.
-- [OpenAI Model Craft: Parameter Golf](https://openai.com/parameter-golf) — developmental tour providing pathways.
+- [OpenAI Model Craft: Parameter Golf](https://openai.com/parameter-golf) — contextual inspiration for parameter-efficient model craft. We are currently developing internal baselines and may formalize participation after validation.
 
 All final methods, experiments, and implementations are the authors' own.
 
