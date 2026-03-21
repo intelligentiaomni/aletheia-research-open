@@ -17,6 +17,8 @@ Instead of chasing scale, we focus on:<br>
 
 ## Round 1: Parameter Golf
 
+Tour-style results, GPT caddy included.
+
 ### Goal:
 
 Improve a baseline model under strict constraints (compute, size, or data).
@@ -103,26 +105,40 @@ Example:
 
 ---
 
+## Acknowledgments
+
+Built on open-source implementations including nanoGPT (Karpathy).<br>
+We gratefully acknowledge the open-source and research contributions that enabled this work:
+
+- [nanoGPT GitHub](https://github.com/karpathy/nanoGPT) — baseline code and architecture.
+- [Attention is All You Need (Vaswani et al., 2017)](https://arxiv.org/abs/1706.03762) — foundational transformer paper informing model design.
+- [OpenAI Model Craft: Parameter Golf](https://openai.com/parameter-golf) — developmental tour providing pathways.
+
+All final methods, experiments, and implementations are the authors' own.
+
+---
+
 ## Directory Structure
 
 ```
 aletheia-research-open/
 │
-├── baseline/                   # nanoGPT clone for research experiments; do NOT modify directly
-│   ├── venv/                      
+├── baseline/                   # nanoGPT clone for research experiments
 │   └── ...                     # cloned nanoGPT files
 ├── docs/                       # notes, insights, write-ups
 ├── leaderboard/                # best configurations and scores
+│   └── leaderboards.csv                   
 ├── parameter-golf/
 │   ├── configs/                # parameter configs (learning rate, batch size, etc.)
+│   ├── eval/                   # evaluation functions
 │   ├── experiments/            # scripts to run experiments
 │   │   └── run_baseline_cpu.py
 │   ├── logs/                   # experiment logs (CSV / JSON)
 │   │   └── experiment_log.csv
-│   ├── results/                # outputs from runs
-│   └── eval/                   # evaluation functions
-├── LICENSE
+│   └── results/                # outputs from runs
+├── venv/                       # virtual environment
 ├── .gitignore
+├── LICENSE
 ├── README.md
 │
 ```
